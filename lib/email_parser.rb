@@ -15,11 +15,8 @@ class EmailParser
     array = @emailString.split(", ")
     finalArr = []
     array.each do |emails|
-      if !finalArr.include?(emails)
-        finalArr << emails.split(" ")
-      end
-
+      finalArr << emails.split(" ")
     end
-    finalArr.flatten()
+    finalArr.flatten().uniq
   end
 end
