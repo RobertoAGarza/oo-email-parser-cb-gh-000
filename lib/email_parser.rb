@@ -17,6 +17,6 @@ class EmailParser
     array.each do |emails|
       findArr << emails.split(" ")
     end
-    array
+    finalArr
   end
 end
