@@ -11,7 +11,8 @@ class EmailParser
   end
 
   def parse
-    array = @emailString.split(", ")
+    array = @emailString.split(", ").join()
+    
     array
   end
 end
