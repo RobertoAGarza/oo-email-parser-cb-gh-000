@@ -11,11 +11,8 @@ class EmailParser
   end
 
   def parse
+    array = []
     array = @emailString.split(", ")
-    parsedArray = []
-    array.each do |email|
-      parsedArray << email
-    end
-    parsedArray
+    array
   end
 end
