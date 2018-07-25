@@ -13,7 +13,10 @@ class EmailParser
   def parse
     array = []
     array = @emailString.split(", ")
-    array = array.split(" ")
+    finalArr = []
+    array.each do |emails|
+      findArr << emails.split(" ")
+    end 
     array
   end
 end
