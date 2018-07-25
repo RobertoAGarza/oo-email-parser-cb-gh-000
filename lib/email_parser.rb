@@ -15,7 +15,10 @@ class EmailParser
     array = @emailString.split(", ")
     finalArr = []
     array.each do |emails|
-      finalArr << emails.split(" ")
+      if !finalArr.include?(emails)
+        finalArr << emails.split(" ")
+      end 
+      
     end
     finalArr.flatten()
   end
