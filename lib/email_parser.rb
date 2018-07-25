@@ -12,7 +12,7 @@ class EmailParser
 
   def parse
     array = @emailString.split(", ").join()
-    
+
     array
   end
 end
