@@ -14,5 +14,6 @@ class EmailParser
     array = []
     array = @emailString.split(", ")
     array = array.split(" ")
+    array 
   end
 end
