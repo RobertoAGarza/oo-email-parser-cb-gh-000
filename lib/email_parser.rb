@@ -15,7 +15,7 @@ class EmailParser
     parsedArray = []
     array.each do |email|
       parsedArray << email
-    end 
+    end
     parsedArray
   end
 end
