@@ -17,8 +17,8 @@ class EmailParser
     array.each do |emails|
       if !finalArr.include?(emails)
         finalArr << emails.split(" ")
-      end 
-      
+      end
+
     end
     finalArr.flatten()
   end
